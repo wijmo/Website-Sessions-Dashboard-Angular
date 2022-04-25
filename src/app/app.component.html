@@ -1,0 +1,29 @@
+<nav class="top-nav">
+  <div class="app-title"><span class="nav-header">Website Sessions Dashboard</span></div>
+</nav>
+<main class="livemap-grid">
+  <div class="livemap load-info">
+    <app-current-info></app-current-info>
+  </div>
+  <div class="livemap map">
+    <app-map-info (countryName)="countryName($event)"></app-map-info>
+  </div>
+  <div class="livemap user-info">
+    <app-user-info [selectedCountryName]="selectedCountryName"></app-user-info>
+  </div>
+  <div class="livemap sessions">
+    <app-session-info></app-session-info>
+  </div>
+  <div class="livemap issue-info">
+    <app-issue-info [selectedCountryName]="selectedCountryName"></app-issue-info>
+  </div>
+  <div class="livemap top-countries">
+    <app-top-country-info></app-top-country-info>
+  </div>
+  <div class="livemap top-platforms">
+    <app-top-platform-info></app-top-platform-info>
+  </div>
+  <div class="livemap browsers">
+    <app-top-browser></app-top-browser>
+  </div>
+</main>
